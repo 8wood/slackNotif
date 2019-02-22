@@ -1,5 +1,10 @@
-from slack import send_message
 
-send_message('mamang from pyton')
+import sys
+import re
+
+#from slack import send_message
+from auditGitHubLog import parseCommit
+
+#send_message('mamang from pyton')
 
 
