@@ -2,9 +2,7 @@
 import sys
 import re
 
-#from slack import send_message
-from auditGitHubLog import parseCommit
+import slack
+#from auditGitHubLog
 
-#send_message('mamang from pyton')
-
-
+slack.send_message('vulnerability found')

@@ -37,12 +37,12 @@ def parseCommit(commitLines):
 				commit['message'] = nextLine.strip()
 		else:
 			print ('ERROR: Unexpected Line: ' + nextLine)
-			
-if __name__ == '__main__':
-	parseCommit(sys.stdin.readlines())
+
+#if __name__ == '__main__':
+#	parseCommit(sys.stdin.readlines())
 
 	# print commits
-	print 'Author'.ljust(15) + '  ' + 'Email'.ljust(20) +'  ' + 'Hash'.ljust(8) + '  ' + 'Message'.ljust(20)
-	print "================================================================================="
-	for commit in commits:
-		print commit['author'].ljust(15) + '  ' + commit['email'][:20].ljust(20) + '  ' +  commit['hash'][:7].ljust(8) + '  ' + commit['message']
+#	print 'Author'.ljust(15) + '  ' + 'Email'.ljust(20) +'  ' + 'Hash'.ljust(8) + '  ' + 'Message'.ljust(20)
+#	print "================================================================================="
+#	for commit in commits:
+#		print commit['author'].ljust(15) + '  ' + commit['email'][:20].ljust(20) + '  ' +  commit['hash'][:7].ljust(8) + '  ' + commit['message']
